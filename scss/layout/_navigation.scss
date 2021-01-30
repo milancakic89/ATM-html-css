@@ -14,17 +14,18 @@
         &-label{
             cursor: pointer;
             position: relative; 
-            min-width: 50px;
+            min-width: 5rem;
+            margin-top: 6px;
         }
         &-arrow{
             transition: all .2s ease-out;
             transform: rotate(180deg);
-            margin-left: 10px;
+            margin-left: 1rem;
         }
         &-wrapper{
             padding: 1rem 0;
             display: none;
-            width: 182px;
+            width: 18.2rem;
             border-radius: 4px;
             transform: translateX(-67%);
         }
@@ -51,18 +52,31 @@
     }
 }
 .navigation{
-    padding: 53px 0;
-    max-width: 1160px !important;
+    margin: 0 auto;
+    padding: 5.3rem 0;
+    @include respond(phone){
+
+        max-width: 72rem;
+    }
+    @include respond(tab-port){
+        max-width: 96rem;
+    }
+    @include respond(tab-land){
+        max-width: 114rem;
+    }
+
+
+
     &-wrapper{
         width: 100%;
-        min-height: 769px;
+        min-height: 77rem;
         background-image: url('assets/images/bg_image.png');
         background-size: cover;
         background-repeat: no-repeat;
     }
 }
 .nav-item{
-    margin-right: 73px;
+    margin-right: 7rem;
 }
 .nav-link{
     color: $inactive-link !important;
@@ -75,10 +89,10 @@
     }
 }
 .navbar-wrapper{
-    margin-left: -100px !important;
+    margin-left: -10rem !important;
+
 }
 .links-wrapper{
-    @include respond(tab-port){
+   width: 100% !important;
 
-    }
 }

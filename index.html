@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ATM Design Task</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
@@ -14,14 +16,13 @@
             <nav class="navbar navbar-expand-sm navbar-light mb-3  d-flex justify-content-between px-0 links-wrapper">
                <a class="navbar-brand" href="#"><img src="./assets//icons/Path 381.svg"/></a>
                <ul class="navbar-nav navbar-wrapper">
-                   <li class="nav-item nav-item-after"><a href="#" class="nav-link text-uppercase">Home</a></li>
-                   <li class="nav-item nav-item-after"><a href="#" class="nav-link text-uppercase">Products</a></li>
-                   <li class="nav-item nav-item-after"><a href="#" class="nav-link text-uppercase">Gallery</a></li>
-                   <li class="nav-item nav-item-after"><a href="#" class="nav-link text-uppercase">Downloads</a></li>
+                   <li class="nav-item"><a href="#" class="nav-link text-uppercase">Home</a></li>
+                   <li class="nav-item"><a href="#" class="nav-link text-uppercase">Products</a></li>
+                   <li class="nav-item"><a href="#" class="nav-link text-uppercase">Gallery</a></li>
+                   <li class="nav-item"><a href="#" class="nav-link text-uppercase">Downloads</a></li>
                </ul>
                <ul class="navbar-nav dropdown">
                 <li class="nav-item dropdown mr-0">
-                    <!-- <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Dropdown</a> --> 
                     <input type="checkbox" id="dropdown-checkbox" class="dropdown-toggle-checkbox">
                     <label for="dropdown-checkbox" class="dropdown-toggle-label"><img src="./assets/icons/united-kingdom.svg"/><img class="dropdown-toggle-arrow" src="./assets/icons/angle-down.svg"/></label>
                      <div class="dropdown-menu dropdown-toggle-wrapper">
@@ -34,6 +35,23 @@
                </ul>
             </nav>
         </div>
+        <section class="site site-hero">
+            <div class="container p-0">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h1 class="site-heading--primary text-light">High quality. Made in Germany.</h1>
+                        <h3 class="site-heading--secondary">
+                             Thanks to its own production at the Herdecke,
+                             Germany ATN Engineering is able to create 
+                             products of the highest quality possible in 
+                             accordance with all guildlines standards.
+                            </h3>
+                            <a class="site-cta">View Our Products</a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
+
 </body>
 </html>

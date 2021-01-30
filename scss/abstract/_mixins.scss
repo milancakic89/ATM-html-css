@@ -31,7 +31,7 @@ MEDIA QUERY MANAGER
   }
 
   @if $breakpoint==phone {
-    @media(min-width: 37.5em) {
+    @media(min-width: 48em) {
       @content
     }
   }
@@ -39,7 +39,7 @@ MEDIA QUERY MANAGER
   ;
 
   @if $breakpoint==tab-port {
-    @media(min-width: 56.25em) {
+    @media(min-width: 62em) {
       @content
     }
   }
