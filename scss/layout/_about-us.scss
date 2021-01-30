@@ -1,0 +1,27 @@
+.about-us{
+    padding: 18.5rem 0 5rem 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    &-item{
+        min-height: 283px;
+        padding: 5rem 1rem;
+        background-color: rgb(255, 255, 255);
+    }
+    &--bordered{
+        border-left: 1px solid $inactive-link;
+        border-right: 1px solid $inactive-link;
+    }
+    &-item-heading{
+        &::after{
+            content: "";
+            padding-top: 3rem;
+            width: 46px;
+            display: block;
+            margin: 0 auto;
+            height: 4px;
+            border-bottom: 4px solid $btn-orange;
+        }
+
+    }
+}

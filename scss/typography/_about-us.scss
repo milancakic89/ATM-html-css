@@ -1,0 +1,15 @@
+.about-us{
+    &-item{
+        &-heading{
+            color: $heading-dark;
+            font-size: 2.4rem;
+            font-weight: 600;
+            margin: 2.3rem 0 3rem 0;
+        }
+    }
+    &-text{
+        font-size: 1.6rem;
+        color: $inactive-link;
+        line-height: 2.6rem;
+    }
+}

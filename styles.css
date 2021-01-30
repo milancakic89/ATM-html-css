@@ -157,3 +157,89 @@ MEDIA QUERY MANAGER
   color: #b7b5b5;
   line-height: 2.8rem;
   margin-bottom: 7.9rem; }
+
+.about-us {
+  padding: 18.5rem 0 5rem 0;
+  display: flex;
+  justify-content: center;
+  text-align: center; }
+  .about-us-item {
+    min-height: 283px;
+    padding: 5rem 1rem;
+    background-color: white; }
+  .about-us--bordered {
+    border-left: 1px solid #b7b5b5;
+    border-right: 1px solid #b7b5b5; }
+  .about-us-item-heading::after {
+    content: "";
+    padding-top: 3rem;
+    width: 46px;
+    display: block;
+    margin: 0 auto;
+    height: 4px;
+    border-bottom: 4px solid #D95419; }
+
+.about-us-item-heading {
+  color: #171717;
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin: 2.3rem 0 3rem 0; }
+
+.about-us-text {
+  font-size: 1.6rem;
+  color: #b7b5b5;
+  line-height: 2.6rem; }
+
+.heading-secondary {
+  font-size: 4rem;
+  line-height: 5.6rem;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 700;
+  color: #000; }
+  .heading-secondary-space {
+    margin-bottom: 10rem auto; }
+
+.m-b-4 {
+  margin-bottom: 4rem; }
+
+.m-b-5 {
+  margin-bottom: 5rem; }
+
+.m-b-6 {
+  margin-bottom: 6rem; }
+
+.m-t-4 {
+  margin-top: 4rem; }
+
+.m-t-5 {
+  margin-top: 5rem; }
+
+.m-t-6 {
+  margin-top: 6rem; }
+
+.m-r-4 {
+  margin-right: 4rem; }
+
+.m-r-5 {
+  margin-right: 5rem; }
+
+.m-r-6 {
+  margin-right: 6rem; }
+
+.m-l-4 {
+  margin-left: 4rem; }
+
+.m-l-5 {
+  margin-left: 5rem; }
+
+.m-l-6 {
+  margin-left: 6rem; }
+
+.learn-more {
+  padding: 10rem 0; }
+  .learn-more-item {
+    background-color: saddlebrown;
+    margin-top: 11rem;
+    height: 476px;
+    padding: 20rem; }
