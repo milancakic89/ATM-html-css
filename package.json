@@ -1,0 +1,17 @@
+{
+  "name": "html-css-task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "node-sass scss/main.scss styles.css"
+  },
+  "author": "Cakic Milan",
+  "license": "ISC",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
