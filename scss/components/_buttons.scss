@@ -23,6 +23,7 @@
         transform: scale(1.4) scale(1.6);
         opacity: 0;
         z-index: 1;
+        border: 2px solid $btn-orange;
       }
 
     &-cta{
@@ -49,7 +50,7 @@
             top: 0;
             left: 0;
             z-index: -1;
-            border-radius: 2.5rem;
+            border-radius: 4px;
         }
 
         &:hover,
@@ -58,6 +59,24 @@
             cursor: pointer;
             color: $btn-orange !important;
             background-color: #fff;
+            border: 2px solid $btn-orange;
         }
     }
+}
+.btn-read-more{
+    position: absolute;
+    bottom: 1.2rem;
+    left: 1.8rem;
+    color: $btn-orange;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 700;
+    i{
+        margin-left: 1rem;
+    }
+    &:hover{
+        text-decoration: none;
+    }
+
 }

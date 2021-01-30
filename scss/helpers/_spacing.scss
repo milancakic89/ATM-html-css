@@ -8,6 +8,12 @@
     &-b-6{
         margin-bottom: 6rem;
     }
+    &-b-10{
+        margin-bottom: 11rem;
+    }
+    &-b-11{
+        margin-bottom: 11rem;
+    }
     &-t-4{
         margin-top: 4rem;
     }
@@ -16,6 +22,9 @@
     }
     &-t-6{
         margin-top: 6rem;
+    }
+    &-t-6{
+        margin-top: 10rem;
     }
     &-r-4{
         margin-right: 4rem;
@@ -36,4 +45,14 @@
         margin-left: 6rem;
     }
  
+}
+.vertical-space{
+    padding-top: 11rem;
+    padding-bottom: 11rem;
+}
+.top-space{
+    padding-top: 11rem;
+}
+.bottom-space{
+    padding-bottom: 11rem;
 }

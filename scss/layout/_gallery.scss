@@ -1,0 +1,12 @@
+.gallery{
+    padding-top: 12.3rem;
+    background-color: $image-back;
+
+    &-image{
+        padding: .8rem;
+        img{
+            width: 100%;
+        }
+       
+    }
+}

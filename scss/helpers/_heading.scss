@@ -6,6 +6,12 @@
     font-weight: 700;
     color: #000;
     &-space{
-        margin-bottom: 10rem auto;
+        margin-bottom: 10rem;
     }
+}
+.heading-item{
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: 3.6rem;
+    color: $heading-dark;
 }
