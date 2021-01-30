@@ -9,5 +9,31 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="navigation-wrapper">
+        <div class="container navigation">
+            <nav class="navbar navbar-expand-sm navbar-light mb-3  d-flex justify-content-between px-0 links-wrapper">
+               <a class="navbar-brand" href="#"><img src="./assets//icons/Path 381.svg"/></a>
+               <ul class="navbar-nav navbar-wrapper">
+                   <li class="nav-item nav-item-after"><a href="#" class="nav-link text-uppercase">Home</a></li>
+                   <li class="nav-item nav-item-after"><a href="#" class="nav-link text-uppercase">Products</a></li>
+                   <li class="nav-item nav-item-after"><a href="#" class="nav-link text-uppercase">Gallery</a></li>
+                   <li class="nav-item nav-item-after"><a href="#" class="nav-link text-uppercase">Downloads</a></li>
+               </ul>
+               <ul class="navbar-nav dropdown">
+                <li class="nav-item dropdown mr-0">
+                    <!-- <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Dropdown</a> --> 
+                    <input type="checkbox" id="dropdown-checkbox" class="dropdown-toggle-checkbox">
+                    <label for="dropdown-checkbox" class="dropdown-toggle-label"><img src="./assets/icons/united-kingdom.svg"/><img class="dropdown-toggle-arrow" src="./assets/icons/angle-down.svg"/></label>
+                     <div class="dropdown-menu dropdown-toggle-wrapper">
+                         <a href="#" class="dropdown-item"><img src="./assets/icons/united-kingdom.svg"/>English</a>
+                         <a href="#" class="dropdown-item"><img src="./assets/icons/germany.svg"/>Deutch</a>
+                         <a href="#" class="dropdown-item"><img src="./assets/icons/spain.svg"/>Español</a>
+                         <a href="#" class="dropdown-item"><img src="./assets/icons/russia.svg"/>Русский</a>
+                     </div>
+                </li>
+               </ul>
+            </nav>
+        </div>
+    </div>
 </body>
 </html>

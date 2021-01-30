@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile": "node-sass scss/main.scss styles.css"
+    "compile": "node-sass scss/main.scss styles.css -w"
   },
   "author": "Cakic Milan",
   "license": "ISC",
