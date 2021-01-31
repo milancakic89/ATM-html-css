@@ -3,3 +3,42 @@
     line-height: 2.6rem;
     color: $inactive-link;
 }
+.contact-label{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: $heading-dark;
+    padding: 0;
+    margin: 0;
+}
+.contact-text{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: $inactive-link;
+    padding: 0px;
+    margin:0px;
+    &:nth-child(even){
+        margin-top: -3px;
+    }
+    &-after{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: $inactive-link;
+    position: relative;
+    padding: 0px;
+    margin: -4px 0 2rem 0;
+   
+
+    &::after{
+        content: "";
+        position: absolute;
+        padding-top: 1rem;
+        width: 46px;
+        left: 0;
+        display: block;
+        margin: 0 auto;
+        height: 4px;
+        border-bottom: 4px solid $btn-orange;
+    }
+    }
+    
+}
