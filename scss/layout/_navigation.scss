@@ -3,6 +3,12 @@
     display: flex;
     align-items: flex-end;
     flex-wrap: nowrap;
+    margin-left: auto;
+    transform: translateY(-60%);
+    @include respond(phone){
+        transform: translateY(0%);
+        margin: 0;
+    }
     &-menu{
         display: block;
     }
@@ -54,6 +60,7 @@
 .navigation{
     margin: 0 auto;
     padding: 5.3rem 0;
+
     @include respond(phone){
 
         max-width: 72rem;
@@ -64,9 +71,6 @@
     @include respond(tab-land){
         max-width: 114rem;
     }
-
-
-
     &-wrapper{
         width: 100%;
         min-height: 77rem;
@@ -76,7 +80,10 @@
     }
 }
 .nav-item{
-    margin-right: 7rem;
+    margin-right: 2rem;
+    @include respond(phone){
+        margin-right: 7rem !important;
+    }
 }
 .nav-link{
     color: $inactive-link !important;
@@ -89,10 +96,18 @@
     }
 }
 .navbar-wrapper{
-    margin-left: -10rem !important;
+    @include respond(phone){
+        margin-left: -10rem !important;
+    }
+    
 
 }
 .links-wrapper{
    width: 100% !important;
+   flex-direction: column;
+   text-align: left;
+   &:not(:last-child){
+    align-items: flex-start;
+   }
 
 }

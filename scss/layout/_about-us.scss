@@ -1,16 +1,30 @@
 .about-us{
-    padding: 18.5rem 0 5rem 0;
+    padding: 9rem 0 5rem 0;
     display: flex;
     justify-content: center;
     text-align: center;
+    @include respond(phone){
+        padding: 18.5rem 0 5rem 0;
+    }
     &-item{
         min-height: 283px;
+        max-width: 40rem;
+        margin: 0 auto;
         padding: 5rem 1rem;
         background-color: rgb(255, 255, 255);
+        @include respond(phone-small){
+            max-width: 100%;
+        }
     }
     &--bordered{
-        border-left: 1px solid $inactive-link;
-        border-right: 1px solid $inactive-link;
+        border-top: 1px solid $inactive-link;
+        border-bottom: 1px solid $inactive-link;
+        @include respond(phone-small){
+            border-left: 1px solid $inactive-link;
+            border-right: 1px solid $inactive-link;
+            border-top: none;
+            border-bottom: none;
+        }
     }
     &-item-heading{
         &::after{

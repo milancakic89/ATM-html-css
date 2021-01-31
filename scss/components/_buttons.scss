@@ -70,8 +70,21 @@
     color: $btn-orange;
     text-transform: uppercase;
     text-decoration: none;
-    font-size: 1.8rem;
+    font-size: 1rem;
     font-weight: 700;
+    @include respond(mini-phone){
+        font-size: 1.2rem;
+    }
+    @include respond(phone){
+        font-size: 1.4rem;
+    }
+    @include respond(tab-port){
+        font-size: 1.6rem;
+    }
+    @include respond(tab-land){
+        font-size: 1.8rem;
+    }
+
     i{
         margin-left: 1rem;
     }
@@ -79,4 +92,17 @@
         text-decoration: none;
     }
 
+
+}
+.btn-social{
+    color: $btn-orange;
+    font-size: 2rem;
+    @include respond(phone){
+        font-size: 3rem;
+    }
+    &:hover{
+        i{
+            color: #fff !important;
+        }
+    }
 }

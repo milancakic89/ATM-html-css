@@ -1,7 +1,10 @@
 .footer{
     background-color: $heading-dark;
     padding: 7.5rem 0;
-
+    margin-top: -13rem;
+    @include respond(tab-port){
+        margin-top: 0;
+    }
     &-text{
         font-size: 1.8rem;
         font-weight: 600;
@@ -20,8 +23,4 @@
             text-decoration: none;
         }
     }
-}
-.btn-social{
-    color: $btn-orange;
-    font-size: 3rem;
 }

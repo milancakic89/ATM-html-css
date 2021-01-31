@@ -16,9 +16,10 @@
 /*
 MEDIA QUERY MANAGER
 
-- mini-phone     300px;      
-- phone -        600px;      37.5em
-- tab-port -     900px;      56.25em
+- mini-phone     300px;      18.75em
+- phone-small -  576px;      36em
+- phone -        768px;      48em
+- tab-port -     900px;      62em
 - tab-land -     1200px;     75em
 - big-desktop -  1800px +    112.5em
 */
@@ -29,6 +30,14 @@ MEDIA QUERY MANAGER
       @content
     }
   }
+;
+@if $breakpoint==phone-small {
+  @media(min-width: 36em) {
+    @content
+  }
+}
+
+;
 
   @if $breakpoint==phone {
     @media(min-width: 48em) {
@@ -36,7 +45,7 @@ MEDIA QUERY MANAGER
     }
   }
 
-  ;
+;
 
   @if $breakpoint==tab-port {
     @media(min-width: 62em) {

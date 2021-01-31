@@ -1,0 +1,68 @@
+
+.image-component{
+    padding: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    &-right{
+        img{
+            width: 100%;
+            margin-top: 5rem;
+            max-width: 360px;
+            @include respond(phone){
+                max-width: 360px;
+            }
+            @include respond(tab-port){
+                max-width: 510px;
+            }
+        }
+        &::after{
+            content: "";
+            display: inline-block;
+            background-color: $light-gray-bg;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+            width: 200%;
+            height: 100%;
+            @include respond(mini-phone){
+                transform: translateX(15%);
+            }
+            @include respond(phone-small){
+                transform: translateX(20%);
+            }
+
+          
+        }
+    }
+    &-left{
+        img{
+            width: 130%;
+            max-width: 250px;
+            margin-top: 5rem;
+            @include respond(phone){
+                max-width: 310px;
+            }
+            @include respond(tab-port){
+                max-width: 450px;
+            }
+        }
+        &::after{
+            content: "";
+            display: inline-block;
+            background-color: $light-gray-bg;
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: -1;
+            width: 200%;
+            height: 100%;
+            transform: translateX(-15%);
+        }
+    }
+
+
+}
