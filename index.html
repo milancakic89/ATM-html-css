@@ -12,29 +12,32 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="navigation-wrapper border">
-        <div class="container navigation">
-            <nav class="navbar navbar-expand-sm navbar-light mb-3  d-flex justify-content-between px-0 links-wrapper">
-               <a class="navbar-brand" href="#"><img src="./assets//icons/Path 381.svg"/></a>
-               <ul class="navbar-nav navbar-wrapper">
-                   <li class="nav-item"><a href="#" class="nav-link text-uppercase">Home</a></li>
-                   <li class="nav-item"><a href="#" class="nav-link text-uppercase">Products</a></li>
-                   <li class="nav-item"><a href="#" class="nav-link text-uppercase">Gallery</a></li>
-                   <li class="nav-item"><a href="#" class="nav-link text-uppercase">Downloads</a></li>
-               </ul>
-               <ul class="navbar-nav dropdown">
-                <li class="nav-item dropdown mr-0">
-                    <input type="checkbox" id="dropdown-checkbox" class="dropdown-toggle-checkbox">
-                    <label for="dropdown-checkbox" class="dropdown-toggle-label"><img src="./assets/icons/united-kingdom.svg"/><img class="dropdown-toggle-arrow" src="./assets/icons/angle-down.svg"/></label>
-                     <div class="dropdown-menu dropdown-toggle-wrapper">
-                         <a href="#" class="dropdown-item"><img src="./assets/icons/united-kingdom.svg"/>English</a>
-                         <a href="#" class="dropdown-item"><img src="./assets/icons/germany.svg"/>Deutch</a>
-                         <a href="#" class="dropdown-item"><img src="./assets/icons/spain.svg"/>Español</a>
-                         <a href="#" class="dropdown-item"><img src="./assets/icons/russia.svg"/>Русский</a>
-                     </div>
-                </li>
-               </ul>
-            </nav>
+    <div class="navigation-background">
+        <div class="navigation-wrapper">
+            <div class="container navigation">
+                <nav class="navbar navbar-expand-sm navbar-light mb-3  d-flex justify-content-between px-0 links-wrapper">
+                   <a class="navbar-brand logo" href="#"><img src="./assets//icons/Path 381.svg"/></a>
+                   <ul class="navbar-nav navbar-wrapper sm-hide">
+                       <li class="nav-item"><a href="#" class="nav-link text-uppercase">Home</a></li>
+                       <li class="nav-item"><a href="#" class="nav-link text-uppercase">Products</a></li>
+                       <li class="nav-item"><a href="#" class="nav-link text-uppercase">Gallery</a></li>
+                       <li class="nav-item"><a href="#" class="nav-link text-uppercase">Downloads</a></li>
+                   </ul>
+                   <ul class="navbar-nav dropdown sm-hide">
+                    <li class="toggle-wrapper mr-0">
+                        <input type="checkbox" id="dropdown-checkbox" class="dropdown-toggle-checkbox">
+                        <label for="dropdown-checkbox" class="dropdown-toggle-label"><img src="./assets/icons/united-kingdom.svg"/><img class="dropdown-toggle-arrow" src="./assets/icons/angle-down.svg"/></label>
+                         <div class="dropdown-toggle-wrapper">
+                             <a href="#" class="dropdown-item"><img src="./assets/icons/united-kingdom.svg"/>English</a>
+                             <a href="#" class="dropdown-item"><img src="./assets/icons/germany.svg"/>Deutch</a>
+                             <a href="#" class="dropdown-item"><img src="./assets/icons/spain.svg"/>Español</a>
+                             <a href="#" class="dropdown-item"><img src="./assets/icons/russia.svg"/>Русский</a>
+                         </div>
+                    </li>
+                   </ul>
+                   <i class="burger-menu fas fa-bars"></i>
+                </nav>
+            </div>
         </div>
         <section class="site site-hero">
             <div class="container">
@@ -89,82 +92,85 @@
         <div class="container ">
             <h2 class="heading-secondary">Learn more about our products</h2>
         </div>
-          <div class="products-item">
-            <div class="container  position-relative">
-                <div class="row item-sm-reverse">
-                    <div class="col-sm-6 row-1">
-                        <h3 class="heading-item mb-5">Swivel joints</h3>
-                        <p class="item-text mb-4"> 
-                            ATN swivel joints are ball track controlled swivel
-                            elements with a medium channel, in order to ensure
-                            safe transport of liquids and gases.
-                        </p>
-                        <p class="item-text m-b-11">
-                            ATN swivel joints
-                            feature either 1 or 2 ball tracks,enabling swivel movements
-                            such as for example a 360° rotation without any problems, 
-                            despite simultaneous external loading through force and torque.
-                        </p>
-                        <a href="#" class="btn-read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                    <div class="col-sm-6 row-2 bottom-space text-center">
-                        <figure class="p-5 image-component-right">
-                            <img class="item-image-right image-3 " src="./assets/images/image_joints.png" alt="Swirel Joints"/>
-                        </figure>
-                    </div>
-                </div>
+    <div class="item-wrapper-image-right">
+        <div class="container item">
+            <div class="item-info position-relative">
+                <h3 class="heading-item mb-5">Swivel joints</h3>
+                <p class="item-text mb-4"> 
+                    ATN swivel joints are ball track controlled swivel
+                    elements with a medium channel, in order to ensure
+                    safe transport of liquids and gases.
+                </p>
+                <p class="item-text m-b-11">
+                    ATN swivel joints
+                    feature either 1 or 2 ball tracks,enabling swivel movements
+                    such as for example a 360° rotation without any problems, 
+                    despite simultaneous external loading through force and torque.
+                </p>
+                <a href="#" class="btn-read-more">Read More <i class="fas fa-arrow-right"></i></a>
             </div>
-        </div>
-        <div class="products-item">
-            <div class="container">
-                <div class="row item-sm-reverse">
-                    <div class="col-sm-6 text-center bottom-space">
-                        <figure class="p-5 image-component-left">
-                            <img class="item-image-right image-3 " src="./assets/images/image_connections.png" alt="Connections"/>
-                        </figure>
-                    </div>
-                    <div class="col-sm-6 pl-3 position-relative">
-                        <h3 class="heading-item mb-5">Rotary connections</h3>
-                        <p class="item-text mb-4"> 
-                            ATN rotary connections are fitted when several media have 
-                            to be put into rotating plant sections at the same time.
-                        </p>
-                        <p class="item-text m-b-11">
-                            They are available in compact or segment construction versions, 
-                            and are produced in accordance with customer requirements 
-                            or wishes. Our ATN rotary connections are also exclusively 
-                            produced at our plant in Herdecke.
-                        </p>
-                        <a href="#" class="btn-read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-      <div class="products-item">
-        <div class="container  position-relative">
-            <div class="row item-sm-reverse">
-                <div class="col-sm-6 row-1">
-                    <h3 class="heading-item mb-5">Swivel joint scissors</h3>
-                    <p class="item-text mb-4"> 
-                        ATN swivel joint scissors are a combination of ATN swivel joints
-                         with welded pipes and pipe elbows.
-                    </p>
-                    <p class="item-text m-b-11">
-                        Thanks to the moveable piping system, large distances can be
-                        bridged. Hoses which are subject to greater torsion can 
-                        alternatively be replaced with ATN swivel joint scissors, 
-                        so as to ensure safe transport of the medium.
-                    </p>
-                    <a href="#" class="btn-read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                </div>
-                <div class="col-sm-6 row-2 bottom-space text-center">
-                    <figure class="p-5 image-component-right">
-                        <img class="item-image-right image-3 " src="./assets/images/image_joint_scissors.png" alt="Swirel Joints"/>
-                    </figure>
-                </div>
+            <div class="item-image image-right">
+                <picture>
+                     <source media="(max-width:900px)" srcset="./assets/images/image_joints.png 1x"/>
+                     <source media="(min-width:901px)" srcset="./assets/images/image_joints@2x.png 2x"/>
+                     <img src="./assets/images/image_joints.png"/>
+                </picture>  
             </div>
         </div>
     </div>
+    <!---->
+    <div class="item-wrapper-image-left">
+        <div class="container item">
+            <div class="item-image image-left">
+                <picture>
+                    <source media="(max-width:900px)" srcset="./assets/images/image_connections.png 1x"/>
+                    <source media="(min-width:901px)" srcset="./assets/images/image_connections@2x.png 2x"/>
+                    <img src="./assets/images/image_connections.png"/>
+               </picture> 
+            </div>
+            <div class="item-info position-relative">
+                <h3 class="heading-item mb-5">Rotary connections</h3>
+                <p class="item-text mb-4"> 
+                    ATN rotary connections are fitted when several media have 
+                    to be put into rotating plant sections at the same time.
+                </p>
+                <p class="item-text m-b-11">
+                    They are available in compact or segment construction versions, 
+                    and are produced in accordance with customer requirements 
+                    or wishes. Our ATN rotary connections are also exclusively 
+                    produced at our plant in Herdecke.
+                </p>
+                <a href="#" class="btn-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+    <!---->
+    <div class="item-wrapper-image-right">
+        <div class="container item">
+            <div class="item-info position-relative">
+                <h3 class="heading-item mb-5">Swivel joint scissors</h3>
+                <p class="item-text mb-4"> 
+                    ATN swivel joint scissors are a combination of ATN swivel joints
+                     with welded pipes and pipe elbows.
+                </p>
+                <p class="item-text m-b-11">
+                    Thanks to the moveable piping system, large distances can be
+                    bridged. Hoses which are subject to greater torsion can 
+                    alternatively be replaced with ATN swivel joint scissors, 
+                    so as to ensure safe transport of the medium.
+                </p>
+                <a href="#" class="btn-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="item-image image-right">
+                <picture>
+                     <source media="(max-width:900px)" srcset="./assets/images/image_joint_scissors.png 1x"/>
+                     <source media="(min-width:901px)" srcset="./assets/images/image_joint_scissors@2x.png 2x"/>
+                     <img src="./assets/images/image_joints_scissors.png"/>
+                </picture>  
+            </div>
+        </div>
+    </div>
+    <!--   end test-->
           <div class="bottom-space text-center">
                 <a href="#" class="site-cta">View All Products</a>
           </div>
@@ -255,7 +261,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-3 d-flex justify-content-between py-4 px-4">
+            <div class="col-sm-3 d-flex footer-social py-4 px-4">
                 <a href="#" class="btn-social"><i class="fab fa-facebook-f"></i></a>
                 <a href="#" class="btn-social"><i class="fab fa-instagram"></i></a>
                 <a href="#" class="btn-social"><i class="fab fa-linkedin-in"></i></a>
@@ -265,5 +271,6 @@
     </div>
 
 </footer>
+<script type="module" defer src="script.js"></script>
 </body>
 </html>

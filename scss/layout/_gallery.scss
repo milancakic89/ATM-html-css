@@ -3,9 +3,13 @@
     background-color: $light-gray-bg;
 
     &-image{
+        text-align: center;
         padding: .8rem;
         img{
-            width: 100%;
+            width: 80%;
+            @include respond(phone){
+                width: 100%;
+            }
         }
        
     }

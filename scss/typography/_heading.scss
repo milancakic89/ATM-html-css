@@ -41,10 +41,10 @@
     line-height: 3.6rem;
     color: $heading-dark;
     @include respond(mini-phone){
-        font-size: 1.9rem;
+        font-size: 2.4rem;
     }
     @include respond(phone-small){
-        font-size: 2.2rem;
+        font-size: 2.6rem;
     }
     @include respond(phone){
         font-size: 2.5rem;

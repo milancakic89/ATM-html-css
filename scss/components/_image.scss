@@ -7,15 +7,15 @@
     height: 100%;
     width: 100%;
     &-right{
+        position: relative;
         img{
             width: 100%;
             margin-top: 5rem;
-            max-width: 360px;
             @include respond(phone){
-                max-width: 360px;
+                max-width: 660px;
             }
             @include respond(tab-port){
-                max-width: 510px;
+                max-width: 710px;
             }
         }
         &::after{
@@ -39,15 +39,16 @@
         }
     }
     &-left{
+        position: relative;
         img{
-            width: 130%;
-            max-width: 250px;
+            width: 100%;
+
             margin-top: 5rem;
             @include respond(phone){
-                max-width: 310px;
+                max-width: 610px;
             }
             @include respond(tab-port){
-                max-width: 450px;
+                max-width: 750px;
             }
         }
         &::after{
@@ -66,3 +67,83 @@
 
 
 }
+.item{
+    display: grid;
+    width: 100%;
+    max-width: 116rem;
+    padding: 0;
+    width: 100%;
+    margin: 2rem auto;
+    grid-template-columns: 1fr;
+    @include respond(phone){
+        grid-template-columns: 1fr 1fr;
+        margin: 10rem auto;
+    }
+
+    &-wrapper-image-right{
+        width: 100%;
+        background-image: none;
+        @include respond(phone){
+            background-image: linear-gradient(to right, transparent 0%, transparent 62%, $light-gray-bg 62%, $light-gray-bg 100%);
+        }
+    }
+    &-wrapper-image-left{
+        width: 100%;
+        background-image: none;
+        @include respond(phone){
+            background-image: linear-gradient(to left, transparent 0%, transparent 62%, $light-gray-bg 55%, $light-gray-bg 100%);
+        }
+    }
+    &-info,
+    &-image{
+        padding: 5rem 0;
+       
+    }
+    &-info{
+        height: 100%;
+        padding: 5rem;
+        order: 2;
+        @include respond(phone){
+            order: 1;
+            padding: 0 5rem 0 5rem;
+        }
+    }
+    &-image{
+        order: 1;
+        @include respond(phone){
+            order: 1;
+        }
+    }
+  
+
+}
+.image-right{
+    text-align: center;
+    background-image: linear-gradient(to right, transparent 0%, transparent 40%, $light-gray-bg 40%, $light-gray-bg 100%);
+    @include respond(phone){
+        text-align: left;
+        background-image: none;
+    }
+}
+.image-left{
+    text-align: center;
+    background-image: linear-gradient(to left, transparent 0%, transparent 40%, $light-gray-bg 40%, $light-gray-bg 100%);
+    @include respond(phone){
+        text-align: right;
+        background-image: none;
+    }
+}
+.image-right img{
+    width: 50%;
+    @include respond(phone){
+        width: 90%;
+    }
+}
+.image-left img{
+    width: 50%;
+    @include respond(phone){
+        width: 80%;
+    }
+} 
+
+

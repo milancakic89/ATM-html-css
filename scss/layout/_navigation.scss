@@ -1,16 +1,14 @@
 
 .dropdown{
+    position: relative;
     display: flex;
-    align-items: flex-end;
-    flex-wrap: nowrap;
-    margin-left: auto;
-    transform: translateY(-60%);
     @include respond(phone){
-        transform: translateY(0%);
-        margin: 0;
+        display: flex;
     }
+
     &-menu{
         display: block;
+        position: absolute;
     }
     &-toggle{
         &-checkbox{
@@ -19,9 +17,9 @@
         }
         &-label{
             cursor: pointer;
-            position: relative; 
             min-width: 5rem;
             margin-top: 6px;
+            
         }
         &-arrow{
             transition: all .2s ease-out;
@@ -30,10 +28,13 @@
         }
         &-wrapper{
             padding: 1rem 0;
-            display: none;
             width: 18.2rem;
+            position: absolute;
+            z-index: 5;
             border-radius: 4px;
+            background-color: #fff;
             transform: translateX(-67%);
+            display: none;
         }
         &-checkbox:checked ~ &-wrapper{
             display: block;
@@ -59,7 +60,7 @@
 }
 .navigation{
     margin: 0 auto;
-    padding: 5.3rem 0;
+    padding: 2rem 1.5rem;
 
     @include respond(phone){
 
@@ -71,16 +72,23 @@
     @include respond(tab-land){
         max-width: 114rem;
     }
-    &-wrapper{
+    &-background{
         width: 100%;
         min-height: 77rem;
         background-image: url('assets/images/bg_image.png');
         background-size: cover;
         background-repeat: no-repeat;
     }
+    &-wrapper{
+        background-color: $heading-dark;
+        position: relative;
+        @include respond(phone){
+            background-color: transparent;
+        }
+    }
 }
 .nav-item{
-    margin-right: 2rem;
+    margin-right: 0rem;
     @include respond(phone){
         margin-right: 7rem !important;
     }
@@ -96,18 +104,45 @@
     }
 }
 .navbar-wrapper{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    flex-direction: column !important;
     @include respond(phone){
-        margin-left: -10rem !important;
+        display: flex;
+        width: auto;
+        flex-direction: row !important;
     }
+
     
 
 }
 .links-wrapper{
-   width: 100% !important;
    flex-direction: column;
-   text-align: left;
-   &:not(:last-child){
-    align-items: flex-start;
-   }
+   justify-content: space-between;
+    @include respond(phone){
+        flex-direction: row;
+    }
+}
+.logo{
+    align-self: flex-start;
+}
+.nav-item{
+    border-bottom: 1px solid $inactive-link;
+    @include respond(phone){
+        border-bottom: none;
+    }
+}
+.toggle-wrapper{
+    margin-top: 3rem;
+    @include respond(phone){
+        margin-top: 0;
+    }
+}
 
+.sm-hide{
+    display: none;
+    @include respond(phone){
+        display: flex;
+    }
 }

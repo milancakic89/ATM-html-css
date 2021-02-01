@@ -1,26 +1,14 @@
 .footer{
     background-color: $heading-dark;
     padding: 7.5rem 0;
-    margin-top: -13rem;
+    margin-top: -13rem !important;
     @include respond(tab-port){
         margin-top: 0;
     }
-    &-text{
-        font-size: 1.8rem;
-        font-weight: 600;
-    }
+
     &-list{
         list-style-type: none;
         text-align: left;
     }
-    &-link{
-        color: $inactive-link;
-        cursor: pointer;
-        font-size: 1.6rem;
-        text-decoration: none;
-        &:hover{
-            color: #fff;
-            text-decoration: none;
-        }
-    }
+
 }

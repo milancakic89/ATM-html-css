@@ -17,14 +17,42 @@
         }
     }
     &--bordered{
+        position: relative;
+        &:before{
+            content: "";
+            left: 0;
+            top: 0;
+            position: absolute;
+            height: 100%;
+            width: 1px;
+            min-height: 283px;
+            background-image: linear-gradient(to bottom, transparent, $inactive-link, transparent);  
+            display: none;        
+            @include respond(phone-small){
+                display: inline-block;       
+            }
+        }
+        &:after{
+            content: "";
+            position: absolute;
+            height: 100%;
+            right: 0;
+            top: 0;
+            width: 1px;
+            background-image: linear-gradient(to bottom, transparent, $inactive-link, transparent);
+            min-height: 283px;  
+            display: none;     
+            @include respond(phone-small){
+                display: inline-block;     
+            }
+        }
         border-top: 1px solid $inactive-link;
         border-bottom: 1px solid $inactive-link;
         @include respond(phone-small){
-            border-left: 1px solid $inactive-link;
-            border-right: 1px solid $inactive-link;
             border-top: none;
             border-bottom: none;
         }
+
     }
     &-item-heading{
         &::after{
