@@ -5,10 +5,26 @@
     &-image{
         text-align: center;
         padding: .8rem;
+        &:hover{
+            @include respond(phone-small){
+                 z-index: 100;
+                 cursor: pointer;
+                img{
+                    outline: 4px solid $btn-orange;
+                    outline-offset: 1rem;
+                }
+            }
+       
+        }
+       
         img{
             width: 80%;
-            @include respond(phone){
+            @include respond(phone-small){
                 width: 100%;
+                transition: all .2s ease-out;
+                &:hover{
+                    transform: scale(1.2);
+                }
             }
         }
        

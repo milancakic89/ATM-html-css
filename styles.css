@@ -6,6 +6,17 @@ html {
   font-size: 62.5%;
   font-family: 'Public Sans', sans-serif; }
 
+@keyframes hero {
+  0% {
+    transform: translateY(150px);
+    opacity: 0; }
+  100% {
+    transform: translateY(0);
+    opacity: 1; } }
+
+.animate {
+  animation: hero 1s ease-out; }
+
 /*
 MEDIA QUERY MANAGER
 
@@ -551,11 +562,21 @@ MEDIA QUERY MANAGER
   .gallery-image {
     text-align: center;
     padding: .8rem; }
+    @media (min-width: 36em) {
+      .gallery-image:hover {
+        z-index: 100;
+        cursor: pointer; }
+        .gallery-image:hover img {
+          outline: 4px solid #D95419;
+          outline-offset: 1rem; } }
     .gallery-image img {
       width: 80%; }
-      @media (min-width: 48em) {
+      @media (min-width: 36em) {
         .gallery-image img {
-          width: 100%; } }
+          width: 100%;
+          transition: all .2s ease-out; }
+          .gallery-image img:hover {
+            transform: scale(1.2); } }
 
 .contact {
   padding-top: 7rem;

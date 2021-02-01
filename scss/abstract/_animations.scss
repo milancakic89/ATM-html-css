@@ -1,0 +1,14 @@
+@keyframes hero{
+    0%{
+        transform: translateY(150px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.animate{
+    animation: hero 1s ease-out;
+}
